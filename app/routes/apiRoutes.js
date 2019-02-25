@@ -1,3 +1,7 @@
+  var friends = require ("../data/friends");
+  
+  module.exports = function(app){
+  
   
   // Displays all friends
   app.get("/api/friends", function(req, res) {
@@ -5,7 +9,7 @@
   });
   
   // Displays a single friends, or returns false
-  app.get("/api/data/friends", function(req, res) {
+  app.get("/api/friends", function(req, res) {
     var chosen = req.params.friends;
   
     console.log(chosen);
@@ -35,3 +39,4 @@
   
     res.json(newFriends);
   });
+}
