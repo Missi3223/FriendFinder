@@ -14,8 +14,8 @@ app.use(express.json());
 
 // The below points our server to a series of "route" files.
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routes/apiRoutes")(app);
+require("./app/routes/htmlRoutes")(app);
 
   // Starts the server to begin listening
   // =============================================================
