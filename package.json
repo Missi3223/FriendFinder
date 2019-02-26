@@ -1,13 +1,13 @@
 {
-    "name": "friendfinder",
-    "version": "1.0.0",
-    "description": "Helps you find friends",
-    "main": "server.js",
-    "dependencies": {
-       "express": "^4.16.3"
-    },
+   "name": "friendfinder",
+   "version": "1.0.0",
+   "description": "Helps you find friends",
+   "main": "server.js",
+   "dependencies": {
+      "body-parser": "^1.18.3",
+      "express": "^4.16.3"
+   },
    "scripts": {
-    "start": "node server.js"
-  }
- }
- 
+      "start": "node server.js"
+   }
+}

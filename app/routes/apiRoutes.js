@@ -1,42 +1,51 @@
-  var friends = require ("../data/friends");
-  
-  module.exports = function(app){
-  
-  
-  // Displays all friends
-  app.get("/api/friends", function(req, res) {
-    return res.json(friends);
+module.exports = function apiRoutes(app) {
+
+  const fs = require("fs");
+
+  const path = require("path");
+
+  var friends = require("./../data/friends.js");
+
+  app.get("/api/friends", function (request, response) {
+
+    return response.json(friends);
   });
-  
+   //get /api/friends
   // Displays a single friends, or returns false
-  app.get("/api/friends", function(req, res) {
-    var chosen = req.params.friends;
-  
-    console.log(chosen);
-  
+  app.post("/api/friends", function (request, response) {
+
+    var totDiff;
+    var diffArry = [];
+    var newFriend = request.body;
+
     for (var i = 0; i < friends.length; i++) {
-      if (chosen === friends[i].routeName) {
-        return res.json(friends[i]);
-      }
-    }
-  
-    return res.json(false);
-  });
-  
-  // Create New friends - takes in JSON input
-  app.post("/api/friends", function(req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body parsing middleware
-    var newFriends = req.body;
-  
-    // Using a RegEx Pattern to remove spaces from newFriends
-    // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-    newFriends.routeName = newFriends.name.replace(/\s+/g, "").toLowerCase();
-  
-    console.log(newFriends);
-  
-    friends.push(newFriends);
-  
-    res.json(newFriends);
-  });
-}
+      
+      totDiff = 0;
+      
+      for (var j = 0; j < newFriend.scores.length; j++) {
+        totDiff += Math.abs(friends[i].scores[j] - newFriend.scores[j]);
+      } //for j
+      diffArry.push(totDiff);
+    } //for i
+
+    var match = diffArry.indexOf(Math.min(...diffArry));
+
+    friends.push(newFriend);
+
+    console.log(newFriend);
+
+    fs.readFile(path.join(__dirname, "../data/friends.json"), "utf8", function (err, data) {
+
+      if (err) throw err;
+
+      var json = JSON.parse(data);
+      json.push(newFriend);
+      
+      fs.writeFile(path.join(__dirname, "../data/friends.json"), JSON.stringify(json, null, 2), function (err) {
+        
+        if (err) throw err;
+      });
+    }); 
+    response.json(friends[match]);
+  }); 
+} 
