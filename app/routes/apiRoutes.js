@@ -10,7 +10,7 @@ module.exports = function apiRoutes(app) {
 
     return response.json(friends);
   });
-   //get /api/friends
+  //get /api/friends
   // Displays a single friends, or returns false
   app.post("/api/friends", function (request, response) {
 
@@ -19,14 +19,14 @@ module.exports = function apiRoutes(app) {
     var newFriend = request.body;
 
     for (var i = 0; i < friends.length; i++) {
-      
+
       totDiff = 0;
-      
+
       for (var j = 0; j < newFriend.scores.length; j++) {
         totDiff += Math.abs(friends[i].scores[j] - newFriend.scores[j]);
-      } //for j
+      }
       diffArry.push(totDiff);
-    } //for i
+    }
 
     var match = diffArry.indexOf(Math.min(...diffArry));
 
@@ -40,12 +40,12 @@ module.exports = function apiRoutes(app) {
 
       var json = JSON.parse(data);
       json.push(newFriend);
-      
+
       fs.writeFile(path.join(__dirname, "../data/friends.json"), JSON.stringify(json, null, 2), function (err) {
-        
+
         if (err) throw err;
       });
-    }); 
+    });
     response.json(friends[match]);
-  }); 
-} 
+  });
+}
