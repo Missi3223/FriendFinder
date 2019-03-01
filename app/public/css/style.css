@@ -1,5 +1,11 @@
 #jumboTron{
    color:rgb(109, 46, 138);
     margin-top: 50px;
+    text-align: center
+  }
+
+  #results-modal{
     text-align: center;
+    align-items: center;
+    color:rgb(109, 46, 138)
   }

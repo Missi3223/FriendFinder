@@ -1,7 +1,7 @@
 [
   {
     "name": "Aiden",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       5,
       1,
@@ -17,7 +17,7 @@
   },
   {
     "name": "Bob",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       2,
       1,
@@ -33,7 +33,7 @@
   },
   {
     "name": "Dylan",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       1,
       2,
@@ -49,7 +49,7 @@
   },
   {
     "name": "Faraz",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/164703/pexels-photo-164703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       5,
       4,
@@ -65,7 +65,7 @@
   },
   {
     "name": "Greg",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       5,
       3,
@@ -81,7 +81,7 @@
   },
   {
     "name": "Hue",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/2015/man-person-woman-face.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       3,
       2,
@@ -97,7 +97,7 @@
   },
   {
     "name": "Jafar",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/476/man-person-red-white.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       4,
       5,
@@ -113,7 +113,7 @@
   },
   {
     "name": "Maggie",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/952036/pexels-photo-952036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       3,
       3,
@@ -129,7 +129,7 @@
   },
   {
     "name": "Mariel",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/1550918/pexels-photo-1550918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       1,
       1,
@@ -145,7 +145,7 @@
   },
   {
     "name": "Megan",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/1649092/pexels-photo-1649092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       3,
       3,
@@ -161,7 +161,7 @@
   },
   {
     "name": "Rudy",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/36479/man-stress-male-face.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       1,
       5,
@@ -177,7 +177,7 @@
   },
   {
     "name": "Steve",
-    "photo": "https://www.pexels.com/photo/doll-wearing-eyeglasses-160472/",
+    "photo": "https://images.pexels.com/photos/1205033/pexels-photo-1205033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=525",
     "scores": [
       3,
       2,
@@ -189,6 +189,22 @@
       4,
       4,
       5
+    ]
+  },
+  {
+    "name": "Melissa Stringer",
+    "photo": "picture",
+    "scores": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "1",
+      "2"
     ]
   }
 ]
